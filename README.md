@@ -2,10 +2,12 @@ Manual Installation
 Official Documentation
 Recommended Hardware: CPU: x86_64 or arm64, 8GB DDR4, 1TB of storage
 
-Update packages and Install dependencies 
-
+**Update packages and Install dependencies **
+```
 sudo apt update && sudo apt upgrade -y
 sudo apt-get install -y make git-core libssl-dev pkg-config libclang-12-dev build-essential protobuf-compiler
+```
+
 Install
 :
 
