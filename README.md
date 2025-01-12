@@ -8,9 +8,8 @@ sudo apt update && sudo apt upgrade -y
 sudo apt-get install -y make git-core libssl-dev pkg-config libclang-12-dev build-essential protobuf-compiler
 ```
 
-Install
-:
-
+**Install**
+```
 cd $HOME
 ! [ -x "$(command -v go)" ] && {
 VER="1.20.3"
@@ -23,6 +22,8 @@ echo "export PATH=$PATH:/usr/local/go/bin:~/go/bin" >> ~/.bash_profile
 source $HOME/.bash_profile
 }
 [ ! -d ~/go/bin ] && mkdir -p ~/go/bin
+```
+
 Replace your Validator and Wallet name, save and import variables into system. Change default port if needed.
 
 NAMADA_PORT=26
