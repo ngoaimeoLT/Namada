@@ -46,8 +46,8 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 source $HOME/.cargo/env
 ```
 
-Install CometBFT:
-
+**Install CometBFT**
+```
 cd $HOME
 rm -rf cometbft
 git clone https://github.com/cometbft/cometbft.git
@@ -56,6 +56,8 @@ git checkout v0.37.11
 make build
 sudo cp $HOME/cometbft/build/cometbft /usr/local/bin/
 cometbft version
+```
+
 Download and build Namada binaries:
 
 cd $HOME
