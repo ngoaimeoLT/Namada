@@ -58,8 +58,8 @@ sudo cp $HOME/cometbft/build/cometbft /usr/local/bin/
 cometbft version
 ```
 
-Download and build Namada binaries:
-
+**Download and build Namada binaries**
+```
 cd $HOME
 rm -rf namada
 git clone https://github.com/anoma/namada
@@ -72,6 +72,8 @@ sudo mv namad* /usr/local/bin/
 if [ ! -d "$BASE_DIR" ]; then
     mkdir -p "$BASE_DIR"
 fi
+```
+
 Check Namada version:
 
 namada --version
