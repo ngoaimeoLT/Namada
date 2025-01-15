@@ -74,9 +74,11 @@ if [ ! -d "$BASE_DIR" ]; then
 fi
 ```
 
-Check Namada version:
-
+**Check Namada version**
+```
 namada --version
+```
+
 🔗 Join-network as Pre-Genesis Validator
 Join-network as Full Nodes or Post-Genesis Validator:
 
