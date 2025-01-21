@@ -125,11 +125,13 @@ add persistent peer:
 sed -i 's#persistent_peers = ".*"#persistent_peers = "tcp://05309c2cce2d163027a47c662066907e89cd6b99@74.50.93.254:26656,tcp://2bf5cdd25975c239e8feb68153d69c5eec004fdb@64.118.250.82:46656"#' $HOME/.local/share/namada/namada.5f5de2dd1b88cba30586420/config.toml
 ```
 
-Enable and start service:
-
+**Enable and start service**
+```
 sudo systemctl daemon-reload
 sudo systemctl enable namadad
 sudo systemctl restart namadad && sudo journalctl -u namadad -f
+```
+
 🔎 Create and fund wallet
 🧑‍🎓 Turn your full node into a validator
 Node Sync Status Checker
