@@ -132,9 +132,10 @@ sudo systemctl enable namadad
 sudo systemctl restart namadad && sudo journalctl -u namadad -f
 ```
 
-🔎 Create and fund wallet
+**Create and fund wallet**
 🧑‍🎓 Turn your full node into a validator
 Node Sync Status Checker
+```
 #!/bin/bash
 rpc_port=$(grep -m 1 -oP '^laddr = "\K[^"]+' "$HOME/.local/share/namada/namada.5f5de2dd1b88cba30586420/cometbft/config/config.toml" | cut -d ':' -f 3)
 while true; do
@@ -156,6 +157,8 @@ while true; do
 
   sleep 5
 done
+```
+
 Security
 To protect you keys please don`t share your privkey, mnemonic and follow basic security rules
 
