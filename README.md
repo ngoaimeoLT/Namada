@@ -175,10 +175,12 @@ sudo ufw allow ${NAMADA_PORT}656/tcp
 sudo ufw enable
 ```
 
-Delete node
+**Delete node**
+```
 sudo systemctl stop namadad
 sudo systemctl disable namadad
 sudo rm -rf /etc/systemd/system/namadad.service
 sudo systemctl daemon-reload
 sudo rm $(which namada)
 sudo rm -rf $HOME/.local/share/namada/namada.5f5de2dd1b88cba30586420
+```
